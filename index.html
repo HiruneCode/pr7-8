@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAcademy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--NAV-BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Онлайн курс по программированию</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HERO-SECTION-->
+    <section class="bg-dark text-white text-center p-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Освой программирование с нуля</h1>
+            <p class="lead mt-3">
+                Онлайн-курс по современным технологиям: HTML, CSS, JavaScript и многое другое.
+            </p>
+            <div class="mt-4">
+                <a href="#course" class="btn btn-primary btn-lg me-2">Начать обучение</a>
+                <a href="#about" class="btn btn-outline-light btn-lg">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="course" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Наши курсы</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Frontend разработка</h5>
+                            <p class="card-text">
+                                HTML, CSS, JavaScript, Bootstrap и React с нуля.
+                            </p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Backend разработка</h5>
+                            <p class="card-text">
+                                Node.js, базы данных, API и серверная логика.
+                            </p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Python разработка</h5>
+                            <p class="card-text">
+                                Основы Python, Django и создание веб-приложений.
+                            </p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">О нашем проекте</h2>
+                    <p class="lead">
+                        Мы создали платформу, которая помогает людям освоить программирование
+                        с нуля и получить востребованную профессию.
+                    </p>
+                    <p>
+                        Наши курсы построены на практике: реальные проекты, поддержка
+                        наставников и современный стек технологий.
+                    </p>
+                    <a href="contacts.html" class="btn btn-primary mt-3">Узнать больше</a>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="/assets/image.jfif" alt="О проекте" class="img-fluid rounded shadow">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="footer" class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-start">
+            <div class="row">
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <h5 class="fw-bold mb-4">CodeAcademy</h5>
+                    <p>
+                        Онлайн-курсы по программированию с практикой,
+                        проектами и поддержкой наставников.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Курсы</h6>
+                    <p><a href="#course" class="text-white text-decoration-none">Frontend</a></p>
+                    <p><a href="#course" class="text-white text-decoration-none">Backend</a></p>
+                    <p><a href="#course" class="text-white text-decoration-none">Python</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Контакты</h6>
+                    <p>Email: info@codeacademy.ru</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <p>Москва, Россия</p>
+
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3">Instagram</a>
+                        <a href="#" class="text-white me-3">Telegram</a>
+                        <a href="#" class="text-white">YouTube</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="text-center">
+                © 2026 CodeAcademy. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
