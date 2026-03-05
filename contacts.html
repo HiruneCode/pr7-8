@@ -6,6 +6,14 @@
     <title>Отзывы и контакты</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .help.is-danger {
+            color: #d32f2f;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -87,20 +95,26 @@
             <div class="row">
 
                 <div class="col-lg-6 mb-4">
-                    <form>
+                    <form id="feedbackForm">
                         <div class="mb-3">
                             <label class="form-label">Ваше имя</label>
-                            <input type="text" class="form-control" placeholder="Введите имя">
+                            <input id="fullname" type="text" class="form-control" placeholder="Введите имя">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Введите email">
+                            <input id="email" type="email" class="form-control" placeholder="Введите email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Номер телефона</label>
+                            <input id="phone" type="tel" class="form-control" placeholder="Введите номер телефона">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Сообщение</label>
-                            <textarea class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
+                            <textarea id="message" class="form-control" rows="4"
+                                placeholder="Ваше сообщение"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">
@@ -169,6 +183,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/error.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/consoleLogger.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
